@@ -1,11 +1,9 @@
 // Uses the same styles as Product
 import styles from "./Product.module.css";
-import Nav from "../components/Header/Nav";
 
 export default function Product() {
   return (
     <main className={styles.product}>
-      <Nav />
       <section>
         <div>
           <h2>
