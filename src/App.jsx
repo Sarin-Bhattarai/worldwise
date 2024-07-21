@@ -14,7 +14,14 @@ function App() {
         <Route path="product" element={<Product />} />
         <Route path="pricing" element={<Pricing />} />
         <Route path="login" element={<Login />} />
-        <Route path="app" element={<AppLayout />} />
+        <Route path="app" element={<AppLayout />}>
+          {/* index route */}
+          <Route index element={<p>City</p>} />
+          {/* Nested Routes */}
+          <Route path="cities" element={<p>Cities</p>} />
+          <Route path="countries" element={<p>Countries</p>} />
+          <Route path="form" element={<p>Form</p>} />
+        </Route>
         <Route path="*" element={<Page404 />} />
       </Routes>
     </Router>
