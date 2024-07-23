@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Product from "./pages/Product";
@@ -7,6 +12,7 @@ import Page404 from "./pages/Page404";
 import Pricing from "./pages/Pricing";
 import AppLayout from "./pages/AppLayout";
 import City from "./components/Extras/City";
+import Form from "./components/Extras/Form";
 import CityList from "./components/Extras/CityList";
 import CountryList from "./components/Extras/CountryList";
 
@@ -41,10 +47,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="app" element={<AppLayout />}>
           {/* index route */}
-          <Route
-            index
-            element={<CityList cities={cities} isLoading={isLoading} />}
-          />
+          <Route index element={<Navigate replace to="cities" />} />
           {/* Nested Routes */}
           <Route
             path="cities"
@@ -55,7 +58,7 @@ function App() {
             path="countries"
             element={<CountryList cities={cities} isLoading={isLoading} />}
           />
-          <Route path="form" element={<p>Form</p>} />
+          <Route path="form" element={<Form />} />
         </Route>
         <Route path="*" element={<Page404 />} />
       </Routes>
