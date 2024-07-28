@@ -18,6 +18,7 @@ import { CitiesProvider } from "./contexts/CitiesContext";
 
 function App() {
   return (
+    //providing contexts for all the routes and making it global
     <CitiesProvider>
       <Router>
         <Routes>
@@ -34,6 +35,7 @@ function App() {
             <Route path="countries" element={<CountryList />} />
             <Route path="form" element={<Form />} />
           </Route>
+          {/* Route for undefined urls */}
           <Route path="*" element={<Page404 />} />
         </Routes>
       </Router>
