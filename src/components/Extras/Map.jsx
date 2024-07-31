@@ -12,19 +12,19 @@ import {
 } from "react-leaflet";
 import Button from "./Button";
 import { useGeolocation } from "../../hooks/UseGeoLocation";
+import { useUrlPosition } from "../../hooks/useUrlPosition";
 
 function Map() {
   const [mapPosition, setMapPosition] = useState([40, 0]);
   const { cities } = useCities();
-  const [searchParams] = useSearchParams();
+
   const {
     isLoading: isLoadingPosition,
     position: geolocationPosition,
     getPosition,
   } = useGeolocation();
 
-  const lat = searchParams?.get("lat");
-  const lng = searchParams?.get("lng");
+  const [lat, lng] = useUrlPosition();
 
   useEffect(
     function () {
