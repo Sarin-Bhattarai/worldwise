@@ -10,7 +10,7 @@
         "lat": 38.727881642324164,
         "lng": -9.140900099907554
       },
-      "id": 73930385
+      "id": "73930385"
     },
     {
       "cityName": "Madrid",
@@ -22,7 +22,7 @@
         "lat": 40.46635901755316,
         "lng": -3.7133789062500004
       },
-      "id": 17806751
+      "id": "17806751"
     },
     {
       "cityName": "Berlin",
@@ -34,7 +34,43 @@
         "lat": 52.53586782505711,
         "lng": 13.376933665713324
       },
-      "id": 98443197
+      "id": "98443197"
+    },
+    {
+      "id": "261b",
+      "cityName": "Siete Iglesias de Trabancos",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-08-01T12:00:50.345Z",
+      "notes": "Really amazing",
+      "position": {
+        "lat": "41.390798977461344",
+        "lng": "-5.185546875000001"
+      }
+    },
+    {
+      "id": "60cc",
+      "cityName": "Pokhara",
+      "country": "Nepal",
+      "emoji": "🇳🇵",
+      "date": "2024-08-01T12:06:15.352Z",
+      "notes": "My home city dude!!",
+      "position": {
+        "lat": "28.145592793617606",
+        "lng": "83.95751953125"
+      }
+    },
+    {
+      "id": "1d96",
+      "cityName": "Karanja",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-08-01T12:12:02.779Z",
+      "notes": "Really hot",
+      "position": {
+        "lat": "21.19148990046241",
+        "lng": "78.31054687500001"
+      }
     }
   ]
 }
